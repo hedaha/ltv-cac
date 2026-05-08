@@ -27193,10 +27193,10 @@ const FONTS = `
 /* ── Global contrast & size overrides ── */
 :root {
   --t1: #f0f0f0;
-  --t2: #bbbbbb;
-  --t3: #888888;
-  --t4: #666666;
-  --t5: #444444;
+  --t2: #cccccc;
+  --t3: #aaaaaa;
+  --t4: #888888;
+  --t5: #666666;
 }
 
 body, button, td, th, div, span {
@@ -28230,8 +28230,8 @@ export default function App() {
             background: "none", border: "none", cursor: "pointer",
             padding: "12px 16px 10px", fontSize: 10, letterSpacing: "0.08em",
             fontFamily: "DM Mono,monospace",
-            color: tab === i ? "#ccc" : "#555",
-            borderBottom: `2px solid ${tab === i ? "#666" : "transparent"}`,
+            color: tab === i ? "#f0f0f0" : "#999",
+            borderBottom: `2px solid ${tab === i ? "#888" : "transparent"}`,
             transition: "all 0.15s",
           }}>{t.toUpperCase()}</button>
         ))}

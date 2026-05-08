@@ -1,5 +1,13 @@
 <!doctype html>
 <html lang="en">
+  <script>
+    new ResizeObserver(() => {
+      window.parent.postMessage(
+        { type: 'iframeResize', height: document.documentElement.scrollHeight },
+        '*'
+      );
+    }).observe(document.documentElement);
+  </script>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
